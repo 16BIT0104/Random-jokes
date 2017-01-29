@@ -1,0 +1,56 @@
+<DOCTYPE html!>
+<html>
+	<head>
+		<title>Random jokes</title>
+		<style type="text/css">
+		body{
+			text-align: center;
+			font-family: verdana;
+			background-image: url(back1.png);
+		}
+		button{
+			color: red;
+			padding: 5px 10px;
+			background-color: DeepSkyBlue;
+		}
+		</style>
+	</head>
+	<body onload="myLoad()">
+		<h1 id="headd"> Random jokes!!!<br><img src="laugh1.jfif" alt="smile"></h1>
+		<p id="demo1"></p><br><br>
+		<button onclick="myFunc()">Welcome</button><br><br>
+		<p id="demo2"></p><br><br>
+		<!--<textarea rows="4" cols="50" id="demo2"></textarea>-->
+
+
+
+
+
+
+    <script>
+    var arr=["Did you hear about the two robbers who were arrested for stealing a calendar\? They both got six months\!",
+         	"Why does the corn get mad at the farmer\?  Because he is always pulling on his ears\.",
+         	"Why don\'t elephants go skinnydipping\? They can\'t get their trunks off.",
+         	"What kind of limes open doors?  Key limes.",
+         	"How does a cow add and subtract? With a cowculator.",
+         	"Ask me if I have a banana in my ear\.Do you have a banana in your ear\?I can\'t hear you\.I have a banana in my ear",
+         	"The residents of Mayberry took a course in computer programming\. When the instructor said\, Compile\, Gomer went to the head of the class.",
+         	"Why did the scientist install a knocker on his door\? He wanted to win the No Bell Prize\.",
+         	"What is a grasshopper\? An insect on a pogo stick\.",
+         	"Why do businessmen carry umbrellas\? Because umbrellas can't walk\.",
+         	"A million dollars isn\'t cool\, you know what\'s cool\? It\'s ICE!!!!	 "];
+
+    function myLoad(){
+    	var y = Math.floor((Math.random() * 10) + 1);
+    	document.getElementById('demo1').innerHTML= arr[y];
+    }
+    function myFunc(){
+    	var x = Math.floor((Math.random() * 10) + 1);
+    	document.getElementById("demo2").innerHTML=arr[x];
+    }
+    
+    
+    </script>
+
+	</body>
+</html>
